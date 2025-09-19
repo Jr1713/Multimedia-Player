@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Multimedia Player</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Multimedia Player</h1>
+
+      <section>
+        <h2>Audio Player</h2>
+        <audio id="audioPlayer" controls aria-label="Sample Audio Track">
+          <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+
+      <section>
+        <h2>Video Player</h2>
+        <video id="videoPlayer" controls width="600" aria-label="Sample Video Clip">
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          <track src="https://www.w3schools.com/html/mov_bbb_subtitles_en.vtt" 
+                 kind="subtitles" 
+                 srclang="en" 
+                 label="English">
+          Your browser does not support the video element.
+        </video>
+      </section>
+
+      <section>
+        <h2>Transcript</h2>
+        <p id="transcript">
+          <strong>[Intro Music]</strong> Welcome to the Multimedia Player demo. 
+          This section shows how to integrate both audio and video into a single page. 
+          You can listen to the audio track above or watch the video player to see it in action.
+        </p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
